@@ -11,13 +11,13 @@ import java.util.UUID;
 @EqualsAndHashCode
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Entity
-@Table(name = "movie")
+@Table(name = "MOVIE")
 public class Movie implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID movieId;
+    private Integer movieId;
 
     @Column(nullable = false, unique = true, length = 50)
     private String title;

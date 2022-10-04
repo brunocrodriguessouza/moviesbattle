@@ -7,14 +7,15 @@ spring:
     username: postgres
     password: postgres
   jpa:
+    generate-ddl: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
       dialect: org.hibernate.dialect.PostgreSQLDialect
       jdbc:
         lob.non-contextual-creation: true
     properties:
       hibernate:
-        ddl-auto: update
+        ddl-auto: create
         dialect: org.hibernate.dialect.PostgreSQLDialect
         show_sql: true
         jdbc:
